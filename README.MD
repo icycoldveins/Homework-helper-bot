@@ -1,4 +1,4 @@
- # CookingRecipeBot
+ # Homeworkhelperbot
 
 ## Requirements:
 - Python 3.8
