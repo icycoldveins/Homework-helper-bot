@@ -4,8 +4,8 @@
 - Python 3.8
 - discord.py library
 
-## How to Run:
 1. Clone the repository.
-2. Navigate to the project directory.
-3. Install the discord.py library using `pip install discord.py`.
-4. Run the bot script using `python recipe.py`.
+2. Install dependencies using pip install -r requirements.txt.
+3. Set your bot token in a .env file.
+4. Run the bot using python bot.py.
+
