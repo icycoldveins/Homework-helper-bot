@@ -15,7 +15,6 @@ bot = commands.Bot(command_prefix="!", intents=intents)
 @bot.event
 async def on_ready():
     print(f"Logged in as {bot.user.name} - {bot.user.id}")
-    await bot.load_extension("cogs.reminder")
     await bot.load_extension("cogs.homework")
     await bot.load_extension("cogs.trivia")
 
