@@ -1,6 +1,8 @@
 import discord
 from discord.ext import commands
 intents = discord.Intents.all()
+intents.message_content = True
+intents.messages = True
 import os
 from dotenv import load_dotenv
 
@@ -13,7 +15,8 @@ bot = commands.Bot(command_prefix="!", intents=intents)
 @bot.event
 async def on_ready():
     print(f"Logged in as {bot.user.name} - {bot.user.id}")
-    await bot.load_extension("cogs.conch")
+    await bot.load_extension("cogs.reminder")
+    await bot.load_extension("cogs.homework")
 
 
 
